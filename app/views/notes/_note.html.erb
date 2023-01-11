@@ -1,0 +1,26 @@
+<div id="<%= dom_id note %>">
+  <p>
+    <strong>Title:</strong>
+    <%= note.title %>
+  </p>
+
+  <p>
+    <strong>Author:</strong>
+    <%= note.author %>
+  </p>
+
+  <p>
+    <strong>Content:</strong>
+    <%= note.content %>
+  </p>
+
+  <p>
+    <strong><%= pluralize note.archives.count, "archive" %>:</strong>
+    <%= note.author %>
+  </p>
+
+  <p>
+    <%= link_to "Show note", note %>
+  </p>
+
+</div>
